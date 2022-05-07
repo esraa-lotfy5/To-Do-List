@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09D85924280813CD00F7E842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D85923280813CD00F7E842 /* AppDelegate.m */; };
+		09D85927280813CD00F7E842 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D85926280813CD00F7E842 /* SceneDelegate.m */; };
+		09D8592A280813CD00F7E842 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D85929280813CD00F7E842 /* ViewController.m */; };
+		09D8592D280813CD00F7E842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D8592B280813CD00F7E842 /* Main.storyboard */; };
+		09D8592F280813E000F7E842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D8592E280813E000F7E842 /* Assets.xcassets */; };
+		09D85932280813E000F7E842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D85930280813E000F7E842 /* LaunchScreen.storyboard */; };
+		09D85935280813E000F7E842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D85934280813E000F7E842 /* main.m */; };
+		09D8594028081BA700F7E842 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D8593F28081BA700F7E842 /* Task.m */; };
+		09D85945280835D000F7E842 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D85944280835D000F7E842 /* AddNoteViewController.m */; };
+		09D859482808371300F7E842 /* NoteDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D859472808371300F7E842 /* NoteDetails.m */; };
+		09D8594F28084D9800F7E842 /* EditTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D8594E28084D9800F7E842 /* EditTask.m */; };
+		09D8DC2F280D8E9F003E33E3 /* EditTask_DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D8DC2E280D8E9F003E33E3 /* EditTask_DatePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09D8591F280813CD00F7E842 /* Esraa_Lotfy_ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esraa_Lotfy_ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D85922280813CD00F7E842 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09D85923280813CD00F7E842 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09D85925280813CD00F7E842 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		09D85926280813CD00F7E842 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		09D85928280813CD00F7E842 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09D85929280813CD00F7E842 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09D8592C280813CD00F7E842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09D8592E280813E000F7E842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09D85931280813E000F7E842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09D85933280813E000F7E842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D85934280813E000F7E842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09D8593E28081BA700F7E842 /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		09D8593F28081BA700F7E842 /* Task.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		09D85943280835D000F7E842 /* AddNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		09D85944280835D000F7E842 /* AddNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		09D859462808371300F7E842 /* NoteDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteDetails.h; sourceTree = "<group>"; };
+		09D859472808371300F7E842 /* NoteDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteDetails.m; sourceTree = "<group>"; };
+		09D859492808390B00F7E842 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		09D8594D28084D9800F7E842 /* EditTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTask.h; sourceTree = "<group>"; };
+		09D8594E28084D9800F7E842 /* EditTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTask.m; sourceTree = "<group>"; };
+		09D8DC2D280D8E9F003E33E3 /* EditTask_DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTask_DatePicker.h; sourceTree = "<group>"; };
+		09D8DC2E280D8E9F003E33E3 /* EditTask_DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTask_DatePicker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09D8591C280813CD00F7E842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09D85916280813CD00F7E842 = {
+			isa = PBXGroup;
+			children = (
+				09D85921280813CD00F7E842 /* Esraa_Lotfy_ToDoList */,
+				09D85920280813CD00F7E842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09D85920280813CD00F7E842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09D8591F280813CD00F7E842 /* Esraa_Lotfy_ToDoList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09D85921280813CD00F7E842 /* Esraa_Lotfy_ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				09D85922280813CD00F7E842 /* AppDelegate.h */,
+				09D85923280813CD00F7E842 /* AppDelegate.m */,
+				09D85925280813CD00F7E842 /* SceneDelegate.h */,
+				09D85926280813CD00F7E842 /* SceneDelegate.m */,
+				09D85928280813CD00F7E842 /* ViewController.h */,
+				09D85929280813CD00F7E842 /* ViewController.m */,
+				09D8592B280813CD00F7E842 /* Main.storyboard */,
+				09D8592E280813E000F7E842 /* Assets.xcassets */,
+				09D85930280813E000F7E842 /* LaunchScreen.storyboard */,
+				09D85933280813E000F7E842 /* Info.plist */,
+				09D85934280813E000F7E842 /* main.m */,
+				09D8593E28081BA700F7E842 /* Task.h */,
+				09D8593F28081BA700F7E842 /* Task.m */,
+				09D85943280835D000F7E842 /* AddNoteViewController.h */,
+				09D85944280835D000F7E842 /* AddNoteViewController.m */,
+				09D859462808371300F7E842 /* NoteDetails.h */,
+				09D859472808371300F7E842 /* NoteDetails.m */,
+				09D859492808390B00F7E842 /* Protocol.h */,
+				09D8594D28084D9800F7E842 /* EditTask.h */,
+				09D8594E28084D9800F7E842 /* EditTask.m */,
+				09D8DC2D280D8E9F003E33E3 /* EditTask_DatePicker.h */,
+				09D8DC2E280D8E9F003E33E3 /* EditTask_DatePicker.m */,
+			);
+			path = Esraa_Lotfy_ToDoList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09D8591E280813CD00F7E842 /* Esraa_Lotfy_ToDoList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D85938280813E000F7E842 /* Build configuration list for PBXNativeTarget "Esraa_Lotfy_ToDoList" */;
+			buildPhases = (
+				09D8591B280813CD00F7E842 /* Sources */,
+				09D8591C280813CD00F7E842 /* Frameworks */,
+				09D8591D280813CD00F7E842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Esraa_Lotfy_ToDoList;
+			productName = Esraa_Lotfy_ToDoList;
+			productReference = 09D8591F280813CD00F7E842 /* Esraa_Lotfy_ToDoList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09D85917280813CD00F7E842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Esraa Lotfy ";
+				TargetAttributes = {
+					09D8591E280813CD00F7E842 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 09D8591A280813CD00F7E842 /* Build configuration list for PBXProject "Esraa_Lotfy_ToDoList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09D85916280813CD00F7E842;
+			productRefGroup = 09D85920280813CD00F7E842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09D8591E280813CD00F7E842 /* Esraa_Lotfy_ToDoList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09D8591D280813CD00F7E842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D85932280813E000F7E842 /* LaunchScreen.storyboard in Resources */,
+				09D8592F280813E000F7E842 /* Assets.xcassets in Resources */,
+				09D8592D280813CD00F7E842 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09D8591B280813CD00F7E842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D8592A280813CD00F7E842 /* ViewController.m in Sources */,
+				09D85945280835D000F7E842 /* AddNoteViewController.m in Sources */,
+				09D85924280813CD00F7E842 /* AppDelegate.m in Sources */,
+				09D859482808371300F7E842 /* NoteDetails.m in Sources */,
+				09D85935280813E000F7E842 /* main.m in Sources */,
+				09D8DC2F280D8E9F003E33E3 /* EditTask_DatePicker.m in Sources */,
+				09D8594028081BA700F7E842 /* Task.m in Sources */,
+				09D8594F28084D9800F7E842 /* EditTask.m in Sources */,
+				09D85927280813CD00F7E842 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09D8592B280813CD00F7E842 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D8592C280813CD00F7E842 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09D85930280813E000F7E842 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D85931280813E000F7E842 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09D85936280813E000F7E842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09D85937280813E000F7E842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09D85939280813E000F7E842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esraa_Lotfy_ToDoList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iti.Esraa-Lotfy-ToDoList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09D8593A280813E000F7E842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esraa_Lotfy_ToDoList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iti.Esraa-Lotfy-ToDoList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09D8591A280813CD00F7E842 /* Build configuration list for PBXProject "Esraa_Lotfy_ToDoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D85936280813E000F7E842 /* Debug */,
+				09D85937280813E000F7E842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D85938280813E000F7E842 /* Build configuration list for PBXNativeTarget "Esraa_Lotfy_ToDoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D85939280813E000F7E842 /* Debug */,
+				09D8593A280813E000F7E842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09D85917280813CD00F7E842 /* Project object */;
+}
