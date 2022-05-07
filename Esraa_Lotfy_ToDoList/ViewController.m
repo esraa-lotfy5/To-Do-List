@@ -24,6 +24,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //  UI
+    //1. Navigation controller
+    self.navigationItem.title = @"Tasks";
+    
     //  table protocols
     self.ToDoTable.delegate = self;
     self.ToDoTable.dataSource = self;
@@ -124,15 +128,33 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
      printf("\n you are in drawing cell \n");
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"tableCell" forIndexPath:indexPath];
-    NSLog(@"prioty %@ \n", [[self.displayedTasks objectAtIndex:indexPath.row] priorty]);
+    //  for cell corner radius
+    cell.layer.cornerRadius = 25;
+    cell.layer.masksToBounds = YES;
+    //  cell text
     cell.textLabel.text = [[self.displayedTasks objectAtIndex:indexPath.row] name];
-    cell.imageView.image = [[self.displayedTasks objectAtIndex:indexPath.row] stateImage];
+    //  cell image
+    if([[[self.displayedTasks objectAtIndex:indexPath.row] priorty] isEqualToString: @"low"]){
+        cell.imageView.image = [UIImage systemImageNamed:@"arrow.down.circle"];
+        cell.imageView.tintColor = UIColor.yellowColor;
+    }else{
+        if([[[self.displayedTasks objectAtIndex:indexPath.row] priorty] isEqualToString: @"mid"]){
+            cell.imageView.image = [UIImage systemImageNamed:@"minus.circle"];
+            cell.imageView.tintColor = UIColor.greenColor;
+        }else{
+            if([[[self.displayedTasks objectAtIndex:indexPath.row] priorty] isEqualToString: @"high"]){
+                cell.imageView.image = [UIImage systemImageNamed:@"arrow.up.circle"];
+                cell.imageView.tintColor = UIColor.redColor;
+            }
+        }
+    }
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
      printf("\n you are in count \n");
     return self.displayedTasks.count;
+    //return 1;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
