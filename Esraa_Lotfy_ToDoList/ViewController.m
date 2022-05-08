@@ -41,7 +41,7 @@
     [_currentTask setName:@"First"];
     [_currentTask setPriorty:@"high"];
     [_currentTask setTaskDescription:@"Desciption"];
-    [_currentTask setState:@"To Do"];
+    [_currentTask setTaskState:@"To Do"];
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     [_currentTask setDate:[dateFormatter stringFromDate:[NSDate date]]];
@@ -80,38 +80,42 @@
             [self.searchTasksArray addObjectsFromArray:self.tasks];
             [self.ToDoTable reloadData];
             break;
-       //   low prioprty notes segment
+       //   to do notes segment
        case 1:
             [self.displayedTasks removeAllObjects];
             [self.searchTasksArray removeAllObjects];
             for(int i =0 ; i< self.tasks.count ; i ++){
-                if([[[self.tasks objectAtIndex:i] priorty] isEqualToString: @"low"]){
+                if([[[self.tasks objectAtIndex:i] taskState] isEqualToString: @"To Do"]){
                     [self.displayedTasks addObject: self.tasks[i]];
                     [self.searchTasksArray addObject: self.tasks[i]];
                 }
             }
         [self.ToDoTable reloadData];
         break;
-       //   mid priopty notes segment
+       //   in progress notes segment
        case 2:
             [self.displayedTasks removeAllObjects];
             [self.searchTasksArray removeAllObjects];
             for(int i =0 ; i< self.tasks.count ; i ++){
-                if([[[self.tasks objectAtIndex:i] priorty] isEqualToString: @"mid"]){
+                if([[[self.tasks objectAtIndex:i] taskState] isEqualToString: @"In Progress"]){
                     [self.displayedTasks addObject: self.tasks[i]];
                     [self.searchTasksArray addObject: self.tasks[i]];
                 }
             }
             [self.ToDoTable reloadData];
             break;
+        //  done notes segment
        case 3:
-            printf("segment three \n");
-            [self.ToDoTable reloadData];
-            break;
-       case 4:
-            printf("segment four \n");
-            [self.ToDoTable reloadData];
-            break;
+        [self.displayedTasks removeAllObjects];
+        [self.searchTasksArray removeAllObjects];
+        for(int i =0 ; i< self.tasks.count ; i ++){
+           if([[[self.tasks objectAtIndex:i] taskState] isEqualToString: @"In Done"]){
+               [self.displayedTasks addObject: self.tasks[i]];
+               [self.searchTasksArray addObject: self.tasks[i]];
+            }
+        }
+        [self.ToDoTable reloadData];
+        break;
        }
 }
 
@@ -239,8 +243,7 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss a"];
     NSLog(@"Data %@",[dateFormatter stringFromDate:[NSDate date]]);
     [newTask setDate: [dateFormatter stringFromDate:[NSDate date]]];
-    //[newTask setStateImage: [UIImage imageNamed:@"low-priority.png"]];
-    [newTask setState:@"To Do"];
+    [newTask setTaskState:@"To Do"];
     NSLog(@"name %@",[newTask name]);
     [_tasks addObject: newTask];
     [self setTable];

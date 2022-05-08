@@ -10,6 +10,7 @@
 #import "EditTask.h"
 
 @interface NoteDetails ()
+@property (weak, nonatomic) IBOutlet UILabel *screenLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 - (IBAction)editButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *stateLabel;
@@ -24,10 +25,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //  set screen label corner radius  
+    self.screenLabel.layer.masksToBounds = YES;
+    
     _nameField.text = [_task name];
     _priortyField.text =[_task priorty];
     _descriptionField.text =[_task taskDescription];
-    _stateLabel.text = [_task state];
+    _stateLabel.text = [_task taskState];
     _dateLabel.text = [_task date];
 }
 

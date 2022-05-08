@@ -29,6 +29,11 @@
     self.statePicker.dataSource = self;
     self.statePicker.delegate = self;
     
+    //  addDescriptio UITextView border
+    self.descriptionField.layer.borderWidth = 0.5;
+    self.descriptionField.layer.cornerRadius = 10;
+    self.descriptionField.layer.borderColor = UIColor.systemGray5Color.CGColor;
+    
     // set fields
     self.nameField.text = [_task name];
     self.descriptionField.text = [_task taskDescription];
@@ -50,15 +55,15 @@
             }
         }
     }
-    if([self.task.state isEqualToString:@"To Do"]){
+    if([self.task.taskState isEqualToString:@"To Do"]){
         _selectionState = @"To Do";
         [self.statePicker selectRow:0 inComponent:0 animated:YES];
     }else{
-        if([self.task.state isEqualToString:@"In Progress"]){
+        if([self.task.taskState isEqualToString:@"In Progress"]){
             _selectionState = @"In Progress";
             [self.statePicker selectRow:1 inComponent:0 animated:YES];
         }else{
-            if([self.task.state isEqualToString:@"Done"]){
+            if([self.task.taskState isEqualToString:@"Done"]){
                 _selectionState = @"Done";
                 [self.statePicker selectRow:2 inComponent:0 animated:YES];
             }
@@ -72,7 +77,7 @@
     //Task * task = [Task new];
     _task.name = [_nameField text];
     _task.taskDescription = [_descriptionField text];
-    _task.state = _selectionState;
+    _task.taskState = _selectionState;
     _task.priorty = _selectionDate;
     [self.homeScreen editNote:_task :_row];
     [self.navigationController popToRootViewControllerAnimated:YES];

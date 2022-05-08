@@ -17,7 +17,7 @@
 @property NSString * priorty;
 @property NSString * date;
 @property UIImage * stateImage;
-@property NSString * state;
+@property NSString * taskState;
 
 @end
 

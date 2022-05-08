@@ -25,6 +25,11 @@
     _priortyPicker.delegate =self;
     _priortyPicker.dataSource = self;
     _selection = @"low";
+    
+    //  addDescriptio UITextView border
+    self.addDescription.layer.borderWidth = 0.5;
+    self.addDescription.layer.cornerRadius = 10;
+    self.addDescription.layer.borderColor = UIColor.systemGray5Color.CGColor;
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -80,7 +85,6 @@
 */
 
 - (IBAction)saveButton:(id)sender {
-    //NSLog(@"from add : des:%@ , pr:%@ \n", [_addDescription text] ,_selection );
     [_FirstVC fillRow: [_addName text]:[_addDescription text] :_selection];
     [self.navigationController popViewControllerAnimated:YES];
 
