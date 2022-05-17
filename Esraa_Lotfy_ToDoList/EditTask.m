@@ -144,15 +144,12 @@
         switch (row) {
             case 0:
                 _selectionDate = @"low";
-                printf("case 0");
                 break;
             case 1:
                 _selectionDate = @"mid";
-                printf("case 1");
                 break;
             case 2:
                 _selectionDate = @"high";
-                printf("case 2");
                 break;
             default:
                 break;
@@ -162,15 +159,12 @@
         switch (row) {
             case 0:
                 _selectionState = @"To Do";
-                printf("case 0");
                 break;
             case 1:
                 _selectionState = @"In Progress";
-                printf("case 1");
                 break;
             case 2:
                 _selectionState = @"Done";
-                printf("case 2");
                 break;
             default:
                 break;

@@ -18,7 +18,6 @@
 		09D85945280835D000F7E842 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D85944280835D000F7E842 /* AddNoteViewController.m */; };
 		09D859482808371300F7E842 /* NoteDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D859472808371300F7E842 /* NoteDetails.m */; };
 		09D8594F28084D9800F7E842 /* EditTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D8594E28084D9800F7E842 /* EditTask.m */; };
-		09D8DC2F280D8E9F003E33E3 /* EditTask_DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D8DC2E280D8E9F003E33E3 /* EditTask_DatePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +42,6 @@
 		09D859492808390B00F7E842 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
 		09D8594D28084D9800F7E842 /* EditTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTask.h; sourceTree = "<group>"; };
 		09D8594E28084D9800F7E842 /* EditTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTask.m; sourceTree = "<group>"; };
-		09D8DC2D280D8E9F003E33E3 /* EditTask_DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTask_DatePicker.h; sourceTree = "<group>"; };
-		09D8DC2E280D8E9F003E33E3 /* EditTask_DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTask_DatePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +94,6 @@
 				09D859492808390B00F7E842 /* Protocol.h */,
 				09D8594D28084D9800F7E842 /* EditTask.h */,
 				09D8594E28084D9800F7E842 /* EditTask.m */,
-				09D8DC2D280D8E9F003E33E3 /* EditTask_DatePicker.h */,
-				09D8DC2E280D8E9F003E33E3 /* EditTask_DatePicker.m */,
 			);
 			path = Esraa_Lotfy_ToDoList;
 			sourceTree = "<group>";
@@ -178,7 +173,6 @@
 				09D85924280813CD00F7E842 /* AppDelegate.m in Sources */,
 				09D859482808371300F7E842 /* NoteDetails.m in Sources */,
 				09D85935280813E000F7E842 /* main.m in Sources */,
-				09D8DC2F280D8E9F003E33E3 /* EditTask_DatePicker.m in Sources */,
 				09D8594028081BA700F7E842 /* Task.m in Sources */,
 				09D8594F28084D9800F7E842 /* EditTask.m in Sources */,
 				09D85927280813CD00F7E842 /* SceneDelegate.m in Sources */,
