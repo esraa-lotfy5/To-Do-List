@@ -2,8 +2,7 @@
 Our To-Do List app is simple and actually will save your time with the most basic time management features.
 
 ## Demo
-https://user-images.githubusercontent.com/83614911/168916966-66b0a9db-cecc-4873-825a-1de4086d01cb.mp4
-
+https://user-images.githubusercontent.com/83614911/168922329-cde484c4-5284-45e7-a077-ede65eda4bd1.mp4
 
 ## Features
 - Add new task.
